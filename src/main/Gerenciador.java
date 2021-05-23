@@ -12,9 +12,6 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.ArrayList;
 
-
-
-
 public class Gerenciador {
 
 	public static void main(String[] args) throws ParseException {
@@ -24,12 +21,9 @@ public class Gerenciador {
 		SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");
         List<Cliente> list = new ArrayList<>();
         GerenciadorDAO gen = new GerenciadorDAO();
-       
         int sair = 0;
-
-		
         //Abre o arquivo
-        String path = "C:\\Users\\Wesley\\Desktop\\conversor.txt";
+        String path = "C:\\conversor.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 
@@ -47,7 +41,8 @@ public class Gerenciador {
                 list.add(new Cliente(nome, moedaOrigem, moedaDestino, valorOriginal, valorConvertido, data));
                 line = br.readLine();
             }
-		while(sair != 4) {
+		//menu de opções ele se repetirá quantas vezes o usuário quiser 
+        while(sair != 4) {
 		String cliente;
 		System.out.println("Gerenciador da casa de câmbio:");
 		System.out.println("");
@@ -66,7 +61,7 @@ public class Gerenciador {
 		System.out.println("Digite 1 para Não / 2 para filtar por nome do cliente / 3 para filtrar por data");
 		int escolha2 = sc.nextInt();
 		
-		//Função para filtar pelo nome do cliente
+		//Função para filtar pelo nome do cliente e realizar o relatório escolhido de acordo com o filtro designado
 		if(escolha2 == 2) {
 			System.out.println("Digite o nome do cliente: ");
 			cliente = sc.next();
@@ -95,7 +90,7 @@ public class Gerenciador {
 			}
          
 		}
-		//Função para filtar por um intervalo de datas
+		//Função para filtar por um intervalo de datas e gerar o relatório previamente escolhido
 		else if(escolha2 == 3) {
 			
 			System.out.println("Digite o intervalo de tempo que deseja: ");
@@ -128,20 +123,20 @@ public class Gerenciador {
 			}
 					
 		}else if(escolha2 == 1) {
-		//Função para imprimir na tela todas as operações feitas
+		// Imprimi na tela todas as operações feitas
 		if(escolha == 1) {
 			List<String> cliente1 = gen.TotalOperacoes(list);
 			System.out.println("Todas operações realizadas");
 			cliente1.forEach(System.out::println);
 			
 		}
-		//Função para imprimir na tela o total de todas as converções feitas
+		// Imprimi na tela o total de todas as converções feitas
 		else if(escolha == 2) {
 			double total1 = gen.ValorTotalConversoes(list);			
 			System.out.println("Total de todas as conversões: " + String.format("%.2f",total1) + "R$");
 		
 		}
-		//Função para imprimir na tela todas as taxas cobradas
+		//Imprimi na tela todas as taxas cobradas
 		else if(escolha == 3) {
 			double taxas = gen.TotalTaxas(list);
 			System.out.println("Total de todas as taxas cobradas: " + String.format("%.2f",taxas)+ "R$");

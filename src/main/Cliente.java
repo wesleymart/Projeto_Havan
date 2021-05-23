@@ -11,6 +11,7 @@ public class Cliente {
 	private Double valorConvertido = 0.00;
 	private Date data;
 
+	//Construtor da classe
 	public Cliente(String nome, String moedaOrigem, String moedaDestino, double valorOriginal, double valorConvertido, Date data) {
 		this.nome = nome;
 		this.moedaOrigem = moedaOrigem;
@@ -20,8 +21,7 @@ public class Cliente {
 		this.data = data;
 	}
 	
-	
-
+	//Abaixo estão todos os Gets e Sets para acesso de dados e variaves 
 	public String getNome() {
 		return nome;
 	}
@@ -69,13 +69,4 @@ public class Cliente {
 	public void setData(Date data) {
 		this.data = data;
 	}
-
-	@Override
-	public String toString() {
-		return "Cliente [nome=" + nome + ", moedaOrigem=" + moedaOrigem + ", moedaDestino=" + moedaDestino
-				+ ", valorOriginal=" + valorOriginal + ", valorConvertido=" + valorConvertido + "]";
-	}
-	
-	
-
 }
