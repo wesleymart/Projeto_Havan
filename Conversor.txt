@@ -1,0 +1,24 @@
+Teobaldo; Dolar; Real; 50.00; 288.42; 10; 10/01/2021
+Carlos; libra; Real; 15.00; 123.09; 10; 13/01/2021
+Tobias; Euro; Real; 37.50;266.21; 10; 17/01/2021
+Luis; Libra; Real; 27.30; 225.23; 10; 02/01/2021
+Regina; Peso; Real; 170.15; 10.48; 10; 26/01/2021
+Francisco; Libra; Real; 75.00; 617.68; 10; 10/01/2021
+João; Dolar; Real; 69.00; 401.06; 10; 19/01/2021
+Eduardo; Euro; Real; 101.00; 716.99; 10; 06/03/2021
+Teobaldo; Dolar; Real; 60.00; 352.63; 10; 12/02/2021
+Carlos; libra; Real; 20.00; 151.23; 10; 15/03/2021
+Tobias; Euro; Real; 60.00;429.28; 10; 19/05/2021
+Luis; Libra; Real; 25.50; 212.10; 10; 02/03/2021
+Regina; Peso; Real; 150.00; 9.35; 10; 26/02/2021
+Francisco; Libra; Real; 40.00;332.70 ; 10; 03/06/2021
+João; Dolar; Real;90 ; 529.44; 10; 21/04/2021
+Eduardo; Euro; Real;130.10;930.12; 10; 16/01/2021
+Teobaldo; Dolar; Real; 150.00;881.19 ; 10; 24/04/2021
+Carlos; libra; Real; 30.00; 253.70; 10; 23/01/2021
+Tobias; Euro; Real; 30.00;214.64; 10; 17/05/2021
+Luis; Libra; Real;45.00;374.29; 10; 10/04/2021
+Regina; Peso; Real; 200.00;12.66; 10; 15/03/2021
+Francisco; Libra; Real; 90.00; 749.08; 10; 22/05/2021
+João; Dolar; Real;126.00 ;740.30; 10; 14/06/2021
+Eduardo; Euro; Real;102.00;726.90; 10; 15/04/2021
